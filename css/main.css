@@ -37,12 +37,30 @@ ul > li > a:visited {
     border-radius: 50%;
 }
 
+.navtop-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.navtop-button:hover {
+    cursor: pointer;
+    background-color: rgba(60,64,67,0.08);
+}
+
 a {
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 main {
@@ -103,7 +121,7 @@ input:focus + #clear-icon{
     margin-right: 5px;
 }
 
-button {
+.search-button {
     margin: 0px 5px 20px 5px;
     padding: 0 10px 0 10px;
     height: 40px;
@@ -111,14 +129,21 @@ button {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     color: #202124;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 0.80em;
 }
 
-button:hover {
+.search-button:hover {
     cursor: pointer;
     border: 1px solid #dadce0;
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+#lang {
+    display: flex;
+    justify-content: space-around;
+    width: 330px;
+    font-size: 0.8em;
 }
 
 .nav-container {
