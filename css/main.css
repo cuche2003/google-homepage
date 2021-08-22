@@ -8,7 +8,7 @@ body {
     justify-content: flex-end;
 }
 
-ul {
+#navlinks-top {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -71,7 +71,7 @@ main {
 }
 
 #logo {
-    width: 270px;
+    width: 280px;
     margin-bottom: 5px;
 }
 
@@ -85,8 +85,8 @@ main {
     align-items: center;
     max-width: 600px;
     width: 90vw;
-    border-radius: 20px;
-    height: 40px;
+    border-radius: 30px;
+    height: 45px;
     margin: 15px 0px 30px 0px;
 }
 
@@ -130,7 +130,7 @@ input:focus + #clear-icon{
     border: 1px solid #f8f9fa;
     color: #202124;
     border-radius: 3px;
-    font-size: 0.80em;
+    font-size: 0.83em;
 }
 
 .search-button:hover {
@@ -146,15 +146,45 @@ input:focus + #clear-icon{
     font-size: 0.8em;
 }
 
-.nav-container {
+#navbar-footer {
     display: flex;
-    justify-content: center;
     position: absolute;
+    justify-content: space-between;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 45px;
     background-color: rgb(182, 182, 182);
 }
 
+#navbar-left {
+    display: flex;
+    width: 500px;
+    justify-content: flex-start;
+}
 
+#navbar-right {
+    display: flex;
+    width: 300px;
+    justify-content: flex-end;
+}
 
+.navbar-bottom {
+    border-radius: 50%;
+    align-items: center;
+    font-family: arial,sans-serif;
+    font-size: 1.15em;
+}
+
+@media (max-width: 1100px) {
+    #navbar-footer {
+        justify-content: space-evenly;
+    }
+}
+
+#navbar-left > li {
+    margin-left: 35px;
+}
+
+#navbar-right > li {
+    margin-right: 35px;
+}
