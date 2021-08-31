@@ -18,7 +18,11 @@ body {
     font-size: 0.75em;
 }
 
-#navlinks-top li, #navlinks-top a:visited {    
+#navlinks-top a {    
+    color: rgba(0,0,0,0.87);
+}
+
+#navlinks-top a:visited {
     color: rgba(0,0,0,0.87);
 }
 
@@ -192,7 +196,11 @@ input:focus + #clear-icon{
     height: 45px;
 }
 
-.navbar-bottom li, .navbar-bottom a:visited {
+.navbar-bottom a {
+    color: #70757a;
+}
+
+.navbar-bottom a:visited {
     color: #70757a;
 }
 
